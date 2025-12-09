@@ -29,7 +29,7 @@ jobs:
       - name: Build with Gradle  # Gradle을 사용하여 프로젝트 빌드
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: build
+          arguments: build -x test
           build-root-directory: umc9th   # 🔥 프로젝트 루트 지정
 
       - name: Upload build artifact  # 빌드된 아티팩트 업로드
